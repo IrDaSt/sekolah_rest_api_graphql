@@ -1,18 +1,18 @@
 # REST API sekolah
 
-REST API dibuat menggunakan framework Laravel.
-Memanfaatkan package Lighthouse untuk menggunakan GraphQL.
+REST API dibuat menggunakan framework Laravel.<br>
+Memanfaatkan package Lighthouse untuk menggunakan GraphQL. <br>
+<br>
+Terdapat 3 tabel yang telah dibuat:<br>
+Student<br>
+Teacher<br>
+Classroom<br>
 
-Terdapat 3 tabel yang telah dibuat:
-Student
-Teacher
-Classroom
-
-Setelah melakukan clone repository, buka terminal dan arahkan menuju directory project
-Kemudian jalankan perintah berikut
+Setelah melakukan clone repository, buka terminal dan arahkan menuju directory project<br>
+Kemudian jalankan perintah berikut<br>
 <code>composer install</code>
-
-Setelah selesai, jalankan server mysql dan buat database dengan nama sekolah_laravel
-
-Jalankan website ini dengan perintah berikut di terminal project
-<code>php artisan serve --port <Port></code>
+<br>
+Setelah selesai, jalankan server mysql dan buat database dengan nama sekolah_laravel<br>
+<br>
+Jalankan website ini dengan perintah berikut di terminal project<br>
+<code>php artisan serve --port <Port></code><br>
