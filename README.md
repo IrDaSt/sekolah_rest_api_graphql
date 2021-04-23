@@ -14,5 +14,8 @@ Kemudian jalankan perintah berikut<br>
 <br>
 Setelah selesai, jalankan server mysql dan buat database dengan nama sekolah_laravel<br>
 <br>
+<br>
+Jalankan perintah berikut untuk membuat tabel yang dibutuhkan oleh database<br>
+<code>php artisan migrate</code>
 Jalankan website ini dengan perintah berikut di terminal project<br>
 <code>php artisan serve --port <Port></code><br>
