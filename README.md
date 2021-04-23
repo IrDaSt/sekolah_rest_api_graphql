@@ -20,3 +20,13 @@ Jalankan perintah berikut untuk membuat tabel yang dibutuhkan oleh database<br>
 <code>php artisan migrate</code><br>
 Jalankan website ini dengan perintah berikut di terminal project<br>
 <code>php artisan serve --port <Port></code><br>
+<br>
+
+## Usage
+### GraphQL Playground
+Arahkan menuju url berikut di Browser yang anda gunakan untuk mengakses website<br>
+<code>localhost:8000/graphql-playground</code><br>
+
+### GraphQL Client Usage
+Pemanggilan data maupun penyimpanan data dapat dilakukan dengan menggunakan url sebagai berikut dalam request<br>
+<code>localhost:8000/graphql?query=query graphQL{}</code><br>
