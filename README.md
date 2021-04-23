@@ -11,6 +11,7 @@ Classroom<br>
 Setelah melakukan clone repository, buka terminal dan arahkan menuju directory project<br>
 Kemudian jalankan perintah berikut<br>
 <code>composer install</code>
+<code>composer update</code>
 <br>
 Setelah selesai, jalankan server mysql dan buat database dengan nama sekolah_laravel<br>
 <br>
