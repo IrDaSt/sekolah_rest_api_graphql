@@ -1,0 +1,88 @@
+"A date string with format `Y-m-d`, e.g. `2011-05-23`."
+scalar Date @scalar(class: "Nuwave\\Lighthouse\\Schema\\Types\\Scalars\\Date")
+
+"A datetime string with format `Y-m-d H:i:s`, e.g. `2018-05-23 13:43:32`."
+scalar DateTime @scalar(class: "Nuwave\\Lighthouse\\Schema\\Types\\Scalars\\DateTime")
+
+type Query {
+    # users: [User!]! @paginate(defaultCount: 10)
+    # user(id: ID @eq): User @find
+    students: [Student] @paginate(defaultCount: 10)
+    student(id: ID @eq): Student @find
+    teachers: [Teacher] @paginate(defaultCount: 10)
+    teacher(id: ID @eq): Teacher @find
+    classrooms: [Classroom] @paginate(defaultCount: 10)
+    classroom(id: ID @eq): Classroom @find
+}
+
+type Student {
+    id: ID!
+    name: String
+    age: Int
+    created_at: DateTime
+    updated_at: DateTime
+}
+
+type Teacher {
+    id: ID!
+    name: String
+    age: Int
+    created_at: DateTime
+    updated_at: DateTime
+}
+
+type Classroom {
+    id: ID!
+    name: String
+    description: String
+    created_at: DateTime
+    updated_at: DateTime
+}
+
+type Mutation{
+    ## STUDENT MUTATION ##
+    createStudent(input: StudentCreateInput! @spread): Student @create
+    updateStudent(input: StudentUpdateInput! @spread): Student @update
+    deleteStudent(id: ID!): Student @delete
+    ## TEACHER MUTATION ##
+    createTeacher(input: TeacherCreateInput! @spread): Teacher @create
+    updateTeacher(input: TeacherUpdateInput! @spread): Teacher @update
+    deleteTeacher(id: ID!): Teacher @delete
+    ## CLASSROOM MUTATION ##
+    createClassroom(input: ClassroomCreateInput! @spread): Classroom @create
+    updateClassroom(input: ClassroomUpdateInput! @spread): Classroom @update
+    deleteClassroom(id: ID!): Classroom @delete
+}
+
+input StudentCreateInput{
+    name: String!
+    age: Int!
+}
+
+input StudentUpdateInput{
+    id: ID!
+    name: String
+    age: Int
+}
+
+input TeacherCreateInput{
+    name: String!
+    age: Int!
+}
+
+input TeacherUpdateInput{
+    id: ID!
+    name: String
+    age: Int
+}
+
+input ClassroomCreateInput{
+    name: String!
+    description: String!
+}
+
+input ClassroomUpdateInput{
+    id: ID!
+    name: String
+    description: String
+}
