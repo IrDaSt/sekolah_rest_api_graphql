@@ -16,6 +16,6 @@ Setelah selesai, jalankan server mysql dan buat database dengan nama sekolah_lar
 <br>
 <br>
 Jalankan perintah berikut untuk membuat tabel yang dibutuhkan oleh database<br>
-<code>php artisan migrate</code>
+<code>php artisan migrate</code><br>
 Jalankan website ini dengan perintah berikut di terminal project<br>
 <code>php artisan serve --port <Port></code><br>
